@@ -1,0 +1,11 @@
+.example-card {
+  width: 90vw;
+  height: 120vh;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color:  #c8c8c8;;
+  }
+  

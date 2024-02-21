@@ -1,0 +1,127 @@
+<div id="about-me">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>About me</mat-card-title>
+      <mat-card-subtitle>Name Lastname</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>This card indeterminates progress bar.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim inventore neque molestias, magni at
+        dolorem commodi quaerat consequuntur ad!</p>
+
+
+     
+
+      <h2>titl2</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita aut temporibus aliquam inventore nisi dolor,
+        natus nulla itaque nostrum voluptatibus in quibusdam qui obcaecati a!</p>
+
+
+      <mat-accordion>
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Texto expansible 1
+            </mat-panel-title>
+            <mat-panel-description>
+              Ver mas informacion
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>imagen <img src="assets/components/about-me/pic4.png" alt="" style="max-width: 50%; height: auto;"></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam autem praesentium expedita delectus sequi sint
+            vero aliquam ut, doloribus distinctio!</p>
+            
+               </mat-expansion-panel>
+
+               
+
+
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Texto expansible 2
+            </mat-panel-title>
+            <mat-panel-description>
+              Ver mas informacion
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure officiis, nobis unde expedita explicabo
+            reiciendis temporibus velit voluptates aspernatur consequuntur delectus culpa laboriosam sit incidunt. Nobis
+            enim nihil fugit sunt culpa porro dolor nam ex, perferendis nemo dignissimos natus in perspiciatis
+            voluptatibus doloribus provident, accusamus voluptas amet quisquam dicta molestias?</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+      
+
+
+      <mat-accordion>
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Texto expansible 3
+            </mat-panel-title>
+            <mat-panel-description>
+              Ver mas informacion
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem assumenda laborum eligendi! Velit
+            reprehenderit impedit rerum aut, earum pariatur commodi blanditiis eos eaque ex sint adipisci tempora
+            distinctio iure hic similique facilis magnam repellendus totam inventore, quos non repudiandae quisquam
+            repellat. Dignissimos, libero. Atque unde corporis dicta ut placeat aperiam.</p>
+        </mat-expansion-panel>
+
+        
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Texto Expansible 4
+            </mat-panel-title>
+            <mat-panel-description>
+              Ver mas informacion
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nulla consectetur aliquid repellat deserunt
+            voluptate aut perferendis veniam perspiciatis veritatis assumenda amet sint nemo, nostrum harum quis vel
+            dicta, illo quidem vero suscipit incidunt expedita odio dolor! Numquam repellat, obcaecati natus ratione
+            aspernatur placeat provident? Assumenda consectetur iste tempora veritatis.</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+
+
+      <h3>Galeria de fotos</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium provident rem harum voluptates quasi
+        accusantium minus nam hic ad sed!
+      </p>
+ 
+
+
+<div id="my-carousel-1">
+        @if (images) {
+          <ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+            @for (image of images; track image) {
+              <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                  <img  [src]="image" alt="Random slide" />
+                </div>
+                <div class="carousel-caption">
+                  <h3>💓</h3>
+                  <p>This carousel hides navigation arrows and indicators.</p>
+                </div>
+              </ng-template>
+            }
+          </ngb-carousel>
+        }
+      </div>  
+           
+    
+
+
+
+  </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>💓</button>
+      <button mat-button>💓</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

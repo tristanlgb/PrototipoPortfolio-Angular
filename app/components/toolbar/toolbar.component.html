@@ -1,0 +1,20 @@
+<!-- app.component.html -->
+
+<p>
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" fxHide.lt-md>
+    </button>
+    <span fxFlex fxHide.gt-xs>Nombre Apellido Art</span>
+    <span class="example-spacer"></span>
+    
+   <!-- My Three poins Button -->
+   <button mat-icon-button color="accent" [matMenuTriggerFor]="menu">   
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item  (click)="scrollTo('home')" fxHide.lt-md>Home</button>
+    <button mat-menu-item  (click)="scrollTo('about-me')" fxHide.lt-md>About Me</button>
+    <button mat-menu-item  (click)="scrollTo('my-art')" fxHide.lt-md>My Art</button>
+  </mat-menu>
+  </mat-toolbar>
+</p>
